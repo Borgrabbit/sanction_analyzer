@@ -41,6 +41,17 @@ def notify_error(filepath, notifyname, content):
         f.write("\n\n"+content)
         f.close()
 
+"""
+ Refractoring purpose
+ 
+ 1. improve time complexity in analyze function
+    -remove object creation in nested loop
+    -use deque instead of list
+ 2. refactor code 
+ 3. redesign process
+
+"""
+
 
 if __name__ == '__main__':
 
